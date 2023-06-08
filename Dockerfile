@@ -11,5 +11,5 @@ RUN mvn clean
 RUN mvn test -X
 
 RUN mvn package
-
+EXPOSE 80
 CMD ["mvn" , "tomcat7:run"]
